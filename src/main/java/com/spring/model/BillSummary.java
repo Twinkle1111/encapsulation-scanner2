@@ -51,7 +51,7 @@ public class BillSummary {
 		public void setPkgChargeAmt(Double pkgChargeAmt) {
 			this.pkgChargeAmt = pkgChargeAmt;
 		}
-		public static void grandTotall(Double subTotal, Double promoAmt, Double vatAmt, Double delChargeAmt, Double pkgChargeAmt) {
+		public  void getGrandTotall(Double subTotal, Double promoAmt, Double vatAmt, Double delChargeAmt, Double pkgChargeAmt) {
 			Double grandTotal = subTotal - (promoAmt) + (vatAmt + delChargeAmt + pkgChargeAmt);
 			System.out.println(grandTotal);
 

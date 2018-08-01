@@ -24,7 +24,7 @@ public class EncapsulationApplication {
 		System.out.println("Enter the PkgCharge Amount");
 		Double pkgChargeAmt = ss.nextDouble();
 		BillSummary aa=new BillSummary();
-		aa.grandTotall(pkgChargeAmt, pkgChargeAmt, pkgChargeAmt, pkgChargeAmt, pkgChargeAmt);
+		aa.getGrandTotall(pkgChargeAmt, pkgChargeAmt, pkgChargeAmt, pkgChargeAmt, pkgChargeAmt);
 		SpringApplication.run(EncapsulationApplication.class, args);
 	}
 

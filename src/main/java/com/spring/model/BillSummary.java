@@ -51,9 +51,17 @@ public class BillSummary {
 		public void setPkgChargeAmt(Double pkgChargeAmt) {
 			this.pkgChargeAmt = pkgChargeAmt;
 		}
-		public  void getGrandTotall(Double subTotal, Double promoAmt, Double vatAmt, Double delChargeAmt, Double pkgChargeAmt) {
-			Double grandTotal = subTotal - (promoAmt) + (vatAmt + delChargeAmt + pkgChargeAmt);
-			System.out.println(grandTotal);
+		public  String getGrandTotall() {
+			BillSummary aa=new BillSummary();
+			aa.setDelChargeAmt(delChargeAmt);
+			aa.setPkgChargeAmt(pkgChargeAmt);
+			aa.setPromoAmt(promoAmt);
+			aa.setSubTotal(subTotal);
+			aa.setVatAmt(vatAmt);
+			Double aa1=(subTotal - (promoAmt) + (vatAmt + delChargeAmt + pkgChargeAmt));
+			System.out.println(aa1);
+			return "aa1";
+			
 
 	}
 }
